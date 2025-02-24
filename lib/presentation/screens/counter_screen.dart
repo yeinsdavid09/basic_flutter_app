@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+
+//* Services
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
+//* Components
 import 'package:basic_flutter_app/presentation/components/counter_button.dart';
 
 class CounterScreen extends StatefulWidget {
@@ -50,8 +55,8 @@ class _CounterScreenState extends State<CounterScreen> {
         actions: [
           IconButton(
             onPressed: resetCounter,
+            tooltip: AppLocalizations.of(context)!.buttons_reset_tooltip,
             icon: const Icon(Icons.refresh_rounded, color: Colors.white),
-            tooltip: 'Refrescar el contador',
           ),
         ],
       ),
@@ -64,8 +69,8 @@ class _CounterScreenState extends State<CounterScreen> {
               style: const TextStyle(fontSize: 80, fontWeight: FontWeight.w400),
             ),
             Text(
-              'Click${clickCounter == 1 ? '' : 's'}',
-              style: const TextStyle(fontSize: 30, fontWeight: FontWeight.w200),
+              AppLocalizations.of(context)!.clicks(clickCounter),
+              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w200),
             ),
           ],
         ),
@@ -75,13 +80,13 @@ class _CounterScreenState extends State<CounterScreen> {
         children: [
           CounterButton(
             onPressed: incrementCounter,
-            tooltip: 'Agregar un click',
+            tooltip: AppLocalizations.of(context)!.buttons_increment_tooltip,
             icon: const Icon(Icons.plus_one),
           ),
           const SizedBox(height: 10),
           CounterButton(
             onPressed: decreaseCounter,
-            tooltip: 'Eliminar un click',
+            tooltip: AppLocalizations.of(context)!.buttons_decrement_tooltip,
             icon: const Icon(Icons.exposure_minus_1_outlined),
           ),
         ],

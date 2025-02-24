@@ -1,0 +1,25 @@
+{
+  "@@locale": "en",
+  "clicks": "You have clicked {clickTimes} times.",
+  "@clicks": {
+    "description": "Message to describe how many times teh user has clicked.",
+    "placeholders": {
+      "clickTimes": {
+        "type": "int",
+        "example": "1"
+      }
+    }
+  },
+  "buttons_reset_tooltip": "Reset the counter",
+  "@buttons_reset_tooltip": {
+    "description": "Message indicating that pressing this button resets the counter."
+  },
+  "buttons_increment_tooltip": "Press to add a click",
+  "@buttons_increment_tooltip": {
+    "description": "Message indicating that pressing this button adds a click."
+  },
+  "buttons_decrement_tooltip": "Press to remove a click",
+  "@buttons_decrement_tooltip": {
+    "description": "Message indicating that pressing this button removes a click."
+  }
+}

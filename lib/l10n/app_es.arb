@@ -1,0 +1,25 @@
+{
+  "@@locale": "es",
+  "clicks": "Haz hecho click {clickTimes} veces",
+  "@clicks": {
+    "description": "Mensaje de cuantas veces el usuario ha hecho click.",
+    "placeholders": {
+      "clickTimes": {
+        "type": "int",
+        "example": "1"
+      }
+    }
+  },
+  "buttons_reset_tooltip": "Resetear contador",
+  "@buttons_reset_tooltip": {
+    "description": "Mensaje que le indica al usuario que al presionar resetea el contador."
+  },
+  "buttons_increment_tooltip": "Agregar un click",
+  "@buttons_increment_tooltip": {
+    "description": "Mensaje que le indica al usuario que al presionar agrega un click."
+  },
+  "buttons_decrement_tooltip": "Eliminar un click",
+  "@buttons_decrement_tooltip": {
+    "description": "Mensaje que le indica al usuario que al presionar elimina un click."
+  }
+}
